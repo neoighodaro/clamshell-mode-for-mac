@@ -1,3 +1,5 @@
+<img src=".github/icon.png" width="128" alt="Clam icon">
+
 # Clam
 
 A macOS menu bar app that keeps your Mac awake with the lid closed.
