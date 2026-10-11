@@ -4,9 +4,7 @@
 
 # Clam
 
-**Keep your Mac awake with the lid closed.**
-
-A small menu bar app for macOS.
+A macOS menu bar app that keeps your Mac awake with the lid closed.
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-1f1f21)
 ![Swift 5](https://img.shields.io/badge/Swift-5-f0a93b)
@@ -16,15 +14,11 @@ A small menu bar app for macOS.
 
 ## What it does
 
-Close the lid and your Mac keeps running instead of going to sleep.
+You arm Clam from the menu bar icon, with a global hotkey, or from a Shortcuts action. While it's armed, closing the lid doesn't put the Mac to sleep. If you only need that once, hold Option as you close the lid and it disarms again when you open it.
 
-| | |
-| --- | --- |
-| **Arm it your way** | From the menu bar icon, a global hotkey, or a Shortcuts action. |
-| **One-close gesture** | Hold Option while closing the lid to arm for just that one close. |
-| **Screen modes** | Turn the display off, or keep it on at zero brightness so screen capture keeps working for agents. |
-| **Safety** | Disarms on its own when the battery runs low or the Mac runs hot. |
-| **Watchdog** | A small helper restores normal sleep if the app ever dies while armed. |
+With the lid closed the display is off by default. There's a second mode that leaves it on at zero brightness, because screen capture stops working on a display that's off and agents that drive the screen need it. That mode locks the Mac when you open the lid, and it uses more battery.
+
+Clam disarms itself when the battery gets low (you pick the percentage) or the Mac runs hot. A separate watchdog process puts normal sleep back if the app crashes while armed.
 
 ## Building
 
