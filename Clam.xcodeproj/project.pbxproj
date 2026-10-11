@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066019FD8DFAC9794AD2A481 /* SignalBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F947059525D561C1C563DB0F /* SignalBridge.swift */; };
+		0E59EFD9D4C02220B8D89EA6 /* chime.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7D0B9E83621E24FF57DDECB /* chime.wav */; };
+		22651F8F749DB664D959B866 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB02EFEACA3414F739B2D12 /* main.swift */; };
+		284ED1B9221A04D46359323B /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7EE90A90418650D5FF9E29 /* Notifier.swift */; };
+		2BB98E4ED03CD5EEF488E88B /* latch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42E6E886601F68EF1DFB9123 /* latch.wav */; };
+		40C1614CBAD93F447D2974B5 /* shell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83F283452777CB2D4356D49C /* shell.wav */; };
+		50D104824155459213BC2697 /* ClamCore in Frameworks */ = {isa = PBXBuildFile; productRef = 95036A1A8FF07C9DAA1D9FD0 /* ClamCore */; };
+		56F897F01F4D91D7DAACCA29 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A02D304E59B5C78F1115AFA /* SettingsWindowController.swift */; };
+		6CEE928F2C588360F8DDA3E2 /* WatchdogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B953C1F4400439800CAE9D2D /* WatchdogManager.swift */; };
+		6D8AF2BFCDED60C2A59E382C /* EnvironmentMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A302468F91B550BA635FF9D /* EnvironmentMonitor.swift */; };
+		732EF5809B9D9EB75E8C1FE5 /* StatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20672E5D0174A1D9F1703BB2 /* StatusItemController.swift */; };
+		8B3DC63006979B6237933458 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EC3E178963C98B79B3005 /* Preferences.swift */; };
+		A8B8E30186EC0932BA257443 /* HotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F0580C51B1C85B7F136EC4 /* HotkeyManager.swift */; };
+		AE54946CCC4312796EB7D164 /* ClamCore in Frameworks */ = {isa = PBXBuildFile; productRef = 354F58E6DE11720F5E07F2BC /* ClamCore */; };
+		AED6BFAFDFD67D460E0A06BB /* LidSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B763355CC19C5A7561B7BB6A /* LidSoundPlayer.swift */; };
+		BC5AB4673A78C9818CE0187F /* Intents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60ABECD436573913693FE1 /* Intents.swift */; };
+		C7BDDCF697B65F68327C42D6 /* GestureOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6239D4707F04592A15FCD /* GestureOverlay.swift */; };
+		C973EF32EB7EA1974287A167 /* HotkeyRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFD91EEE1952A1971209E7 /* HotkeyRecorder.swift */; };
+		D43FCAD398A67F5B24997A3F /* TiltMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA1FBD42285B100C28CEDB /* TiltMonitor.swift */; };
+		E784415039B02A3519D558A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6378423BBBE2A7F0689B15 /* AppDelegate.swift */; };
+		F0E5800814C9902666D0B268 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595E72FC4993A916015CEFE2 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7C997A35BBBF35D7C0D0EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96FC2357F5E9D0863E6B65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8515D713F98CE5766CA17447;
+			remoteInfo = ClamWatchdog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05F6239D4707F04592A15FCD /* GestureOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureOverlay.swift; sourceTree = "<group>"; };
+		0A7EE90A90418650D5FF9E29 /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		20672E5D0174A1D9F1703BB2 /* StatusItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemController.swift; sourceTree = "<group>"; };
+		28FA1DF3D80496AAC66EE502 /* ClamCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ClamCore; sourceTree = SOURCE_ROOT; };
+		42E6E886601F68EF1DFB9123 /* latch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = latch.wav; sourceTree = "<group>"; };
+		595E72FC4993A916015CEFE2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5CEFD91EEE1952A1971209E7 /* HotkeyRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyRecorder.swift; sourceTree = "<group>"; };
+		6A02D304E59B5C78F1115AFA /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		7DB02EFEACA3414F739B2D12 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		83F283452777CB2D4356D49C /* shell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shell.wav; sourceTree = "<group>"; };
+		9A302468F91B550BA635FF9D /* EnvironmentMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentMonitor.swift; sourceTree = "<group>"; };
+		9BBA1FBD42285B100C28CEDB /* TiltMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltMonitor.swift; sourceTree = "<group>"; };
+		A7D0B9E83621E24FF57DDECB /* chime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chime.wav; sourceTree = "<group>"; };
+		B5B81881307BC06400C936F0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B5B81882307BC24A00C936F0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B763355CC19C5A7561B7BB6A /* LidSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidSoundPlayer.swift; sourceTree = "<group>"; };
+		B953C1F4400439800CAE9D2D /* WatchdogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchdogManager.swift; sourceTree = "<group>"; };
+		C8F0580C51B1C85B7F136EC4 /* HotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyManager.swift; sourceTree = "<group>"; };
+		CA5AEB149162BA363E6E1397 /* Clam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE60ABECD436573913693FE1 /* Intents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intents.swift; sourceTree = "<group>"; };
+		D27EC3E178963C98B79B3005 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		E555F55AC7C79DE0816B91AB /* ClamWatchdog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClamWatchdog; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6378423BBBE2A7F0689B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F947059525D561C1C563DB0F /* SignalBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalBridge.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A93723A8743310001C233F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE54946CCC4312796EB7D164 /* ClamCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63319CC48CA95F27191A8A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D104824155459213BC2697 /* ClamCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04D0C6CB6EA1CB6F9D6EB784 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				CE60ABECD436573913693FE1 /* Intents.swift */,
+				F947059525D561C1C563DB0F /* SignalBridge.swift */,
+				B953C1F4400439800CAE9D2D /* WatchdogManager.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		117EEAD7B74E71E9B8FA6A36 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D27EC3E178963C98B79B3005 /* Preferences.swift */,
+				595E72FC4993A916015CEFE2 /* SettingsView.swift */,
+				6A02D304E59B5C78F1115AFA /* SettingsWindowController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		225FC8A3C7351D72B8794207 = {
+			isa = PBXGroup;
+			children = (
+				964003687635069C2DA0BB6D /* App */,
+				5A778192B5C87A27728D0ECB /* Packages */,
+				87CC9C2F1ADA9C969DDE9F45 /* Watchdog */,
+				B5B81881307BC06400C936F0 /* README.md */,
+				B5B81882307BC24A00C936F0 /* LICENSE */,
+				4401E1AD5A2C132F4CAFFA82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DC9C597F8BC3D9C1285FCBA /* Monitoring */ = {
+			isa = PBXGroup;
+			children = (
+				9A302468F91B550BA635FF9D /* EnvironmentMonitor.swift */,
+				9BBA1FBD42285B100C28CEDB /* TiltMonitor.swift */,
+			);
+			path = Monitoring;
+			sourceTree = "<group>";
+		};
+		3F32DB8C697CE3AF775C2548 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD44B8216B344F3631D294E1 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4401E1AD5A2C132F4CAFFA82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA5AEB149162BA363E6E1397 /* Clam.app */,
+				E555F55AC7C79DE0816B91AB /* ClamWatchdog */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A778192B5C87A27728D0ECB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				28FA1DF3D80496AAC66EE502 /* ClamCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		77ECAED399B1CB89F233654D /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				05F6239D4707F04592A15FCD /* GestureOverlay.swift */,
+				B763355CC19C5A7561B7BB6A /* LidSoundPlayer.swift */,
+				0A7EE90A90418650D5FF9E29 /* Notifier.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		87CC9C2F1ADA9C969DDE9F45 /* Watchdog */ = {
+			isa = PBXGroup;
+			children = (
+				7DB02EFEACA3414F739B2D12 /* main.swift */,
+			);
+			path = Watchdog;
+			sourceTree = "<group>";
+		};
+		964003687635069C2DA0BB6D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF6378423BBBE2A7F0689B15 /* AppDelegate.swift */,
+				20672E5D0174A1D9F1703BB2 /* StatusItemController.swift */,
+				77ECAED399B1CB89F233654D /* Feedback */,
+				B49C8142755061C607ED899E /* Hotkey */,
+				2DC9C597F8BC3D9C1285FCBA /* Monitoring */,
+				117EEAD7B74E71E9B8FA6A36 /* Settings */,
+				04D0C6CB6EA1CB6F9D6EB784 /* System */,
+				3F32DB8C697CE3AF775C2548 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B49C8142755061C607ED899E /* Hotkey */ = {
+			isa = PBXGroup;
+			children = (
+				C8F0580C51B1C85B7F136EC4 /* HotkeyManager.swift */,
+				5CEFD91EEE1952A1971209E7 /* HotkeyRecorder.swift */,
+			);
+			path = Hotkey;
+			sourceTree = "<group>";
+		};
+		FD44B8216B344F3631D294E1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0B9E83621E24FF57DDECB /* chime.wav */,
+				42E6E886601F68EF1DFB9123 /* latch.wav */,
+				83F283452777CB2D4356D49C /* shell.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8515D713F98CE5766CA17447 /* ClamWatchdog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95AEC26EC9F6C1074D681266 /* Build configuration list for PBXNativeTarget "ClamWatchdog" */;
+			buildPhases = (
+				180FFB926CE6399AD8176512 /* Sources */,
+				2A93723A8743310001C233F6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClamWatchdog;
+			packageProductDependencies = (
+				354F58E6DE11720F5E07F2BC /* ClamCore */,
+			);
+			productName = ClamWatchdog;
+			productReference = E555F55AC7C79DE0816B91AB /* ClamWatchdog */;
+			productType = "com.apple.product-type.tool";
+		};
+		E2402CD60023869D9548CA1A /* Clam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83833BC8507EAAD2A50296C /* Build configuration list for PBXNativeTarget "Clam" */;
+			buildPhases = (
+				B39FDC5088633FDE8942F15D /* Sources */,
+				8BC3BB0CE070329A9252F35D /* Resources */,
+				63319CC48CA95F27191A8A7B /* Frameworks */,
+				1700C88441DF65B081A1F4F3 /* Embed watchdog */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8EA5C740EFC89711800C12F /* PBXTargetDependency */,
+			);
+			name = Clam;
+			packageProductDependencies = (
+				95036A1A8FF07C9DAA1D9FD0 /* ClamCore */,
+			);
+			productName = Clam;
+			productReference = CA5AEB149162BA363E6E1397 /* Clam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E96FC2357F5E9D0863E6B65E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					8515D713F98CE5766CA17447 = {
+						DevelopmentTeam = FMQ6R58UAV;
+						ProvisioningStyle = Automatic;
+					};
+					E2402CD60023869D9548CA1A = {
+						DevelopmentTeam = FMQ6R58UAV;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BAD9665003D97D09FCC0AC5E /* Build configuration list for PBXProject "Clam" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 225FC8A3C7351D72B8794207;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				76A6034013F76EDB8A7B6525 /* XCLocalSwiftPackageReference "ClamCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4401E1AD5A2C132F4CAFFA82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2402CD60023869D9548CA1A /* Clam */,
+				8515D713F98CE5766CA17447 /* ClamWatchdog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BC3BB0CE070329A9252F35D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E59EFD9D4C02220B8D89EA6 /* chime.wav in Resources */,
+				2BB98E4ED03CD5EEF488E88B /* latch.wav in Resources */,
+				40C1614CBAD93F447D2974B5 /* shell.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1700C88441DF65B081A1F4F3 /* Embed watchdog */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Embed watchdog";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\ncp -f \"${BUILT_PRODUCTS_DIR}/ClamWatchdog\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_FOLDER_PATH}/ClamWatchdog\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${CONTENTS_FOLDER_PATH}/Library/LaunchAgents\"\ncp -f \"${SRCROOT}/App/Support/co.creativitykills.clam.watchdog.plist\" \"${BUILT_PRODUCTS_DIR}/${CONTENTS_FOLDER_PATH}/Library/LaunchAgents/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180FFB926CE6399AD8176512 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22651F8F749DB664D959B866 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39FDC5088633FDE8942F15D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E784415039B02A3519D558A9 /* AppDelegate.swift in Sources */,
+				6D8AF2BFCDED60C2A59E382C /* EnvironmentMonitor.swift in Sources */,
+				C7BDDCF697B65F68327C42D6 /* GestureOverlay.swift in Sources */,
+				A8B8E30186EC0932BA257443 /* HotkeyManager.swift in Sources */,
+				C973EF32EB7EA1974287A167 /* HotkeyRecorder.swift in Sources */,
+				BC5AB4673A78C9818CE0187F /* Intents.swift in Sources */,
+				AED6BFAFDFD67D460E0A06BB /* LidSoundPlayer.swift in Sources */,
+				284ED1B9221A04D46359323B /* Notifier.swift in Sources */,
+				8B3DC63006979B6237933458 /* Preferences.swift in Sources */,
+				F0E5800814C9902666D0B268 /* SettingsView.swift in Sources */,
+				56F897F01F4D91D7DAACCA29 /* SettingsWindowController.swift in Sources */,
+				066019FD8DFAC9794AD2A481 /* SignalBridge.swift in Sources */,
+				732EF5809B9D9EB75E8C1FE5 /* StatusItemController.swift in Sources */,
+				D43FCAD398A67F5B24997A3F /* TiltMonitor.swift in Sources */,
+				6CEE928F2C588360F8DDA3E2 /* WatchdogManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8EA5C740EFC89711800C12F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8515D713F98CE5766CA17447 /* ClamWatchdog */;
+			targetProxy = E7C997A35BBBF35D7C0D0EA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D970B9374270242AB6DF530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.creativitykills.clam.watchdog;
+				PRODUCT_NAME = ClamWatchdog;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		47559B1E782E3907A9BC9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = FMQ6R58UAV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5D5652314073E210339296C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = App/Support/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClamShelled;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.creativitykills.clam;
+				PRODUCT_NAME = Clam;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A7954ADB7FCB0326B3605833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = App/Support/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClamShelled;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.creativitykills.clam;
+				PRODUCT_NAME = Clam;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EC4676445F3C295B9F233609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.creativitykills.clam.watchdog;
+				PRODUCT_NAME = ClamWatchdog;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		ED3330F70D5D27C48630740F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = FMQ6R58UAV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95AEC26EC9F6C1074D681266 /* Build configuration list for PBXNativeTarget "ClamWatchdog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D970B9374270242AB6DF530 /* Debug */,
+				EC4676445F3C295B9F233609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BAD9665003D97D09FCC0AC5E /* Build configuration list for PBXProject "Clam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3330F70D5D27C48630740F /* Debug */,
+				47559B1E782E3907A9BC9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D83833BC8507EAAD2A50296C /* Build configuration list for PBXNativeTarget "Clam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D5652314073E210339296C7 /* Debug */,
+				A7954ADB7FCB0326B3605833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		76A6034013F76EDB8A7B6525 /* XCLocalSwiftPackageReference "ClamCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ClamCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		354F58E6DE11720F5E07F2BC /* ClamCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClamCore;
+		};
+		95036A1A8FF07C9DAA1D9FD0 /* ClamCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClamCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E96FC2357F5E9D0863E6B65E /* Project object */;
+}
