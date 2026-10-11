@@ -1,0 +1,3 @@
+// Signing settings live in Local.xcconfig, which is not checked in.
+// Copy Local.example.xcconfig to Local.xcconfig and set your team ID.
+#include? "Local.xcconfig"

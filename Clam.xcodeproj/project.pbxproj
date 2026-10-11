@@ -22,6 +22,7 @@
 		A8B8E30186EC0932BA257443 /* HotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F0580C51B1C85B7F136EC4 /* HotkeyManager.swift */; };
 		AE54946CCC4312796EB7D164 /* ClamCore in Frameworks */ = {isa = PBXBuildFile; productRef = 354F58E6DE11720F5E07F2BC /* ClamCore */; };
 		AED6BFAFDFD67D460E0A06BB /* LidSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B763355CC19C5A7561B7BB6A /* LidSoundPlayer.swift */; };
+		B5B81884307BC57300C936F0 /* App.icon in Resources */ = {isa = PBXBuildFile; fileRef = B5B81883307BC57300C936F0 /* App.icon */; };
 		BC5AB4673A78C9818CE0187F /* Intents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60ABECD436573913693FE1 /* Intents.swift */; };
 		C7BDDCF697B65F68327C42D6 /* GestureOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6239D4707F04592A15FCD /* GestureOverlay.swift */; };
 		C973EF32EB7EA1974287A167 /* HotkeyRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFD91EEE1952A1971209E7 /* HotkeyRecorder.swift */; };
@@ -56,8 +57,10 @@
 		A7D0B9E83621E24FF57DDECB /* chime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chime.wav; sourceTree = "<group>"; };
 		B5B81881307BC06400C936F0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B5B81882307BC24A00C936F0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B5B81883307BC57300C936F0 /* App.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = App.icon; sourceTree = "<group>"; };
 		B763355CC19C5A7561B7BB6A /* LidSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidSoundPlayer.swift; sourceTree = "<group>"; };
 		B953C1F4400439800CAE9D2D /* WatchdogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchdogManager.swift; sourceTree = "<group>"; };
+		C0F1A5E7B2D94A6183E7F001 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
 		C8F0580C51B1C85B7F136EC4 /* HotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyManager.swift; sourceTree = "<group>"; };
 		CA5AEB149162BA363E6E1397 /* Clam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE60ABECD436573913693FE1 /* Intents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intents.swift; sourceTree = "<group>"; };
@@ -111,8 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				964003687635069C2DA0BB6D /* App */,
+				C0F1A5E7B2D94A6183E7F002 /* Config */,
 				5A778192B5C87A27728D0ECB /* Packages */,
 				87CC9C2F1ADA9C969DDE9F45 /* Watchdog */,
+				B5B81883307BC57300C936F0 /* App.icon */,
 				B5B81881307BC06400C936F0 /* README.md */,
 				B5B81882307BC24A00C936F0 /* LICENSE */,
 				4401E1AD5A2C132F4CAFFA82 /* Products */,
@@ -195,6 +200,14 @@
 			path = Hotkey;
 			sourceTree = "<group>";
 		};
+		C0F1A5E7B2D94A6183E7F002 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C0F1A5E7B2D94A6183E7F001 /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		FD44B8216B344F3631D294E1 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,11 +272,9 @@
 				LastUpgradeCheck = 2710;
 				TargetAttributes = {
 					8515D713F98CE5766CA17447 = {
-						DevelopmentTeam = FMQ6R58UAV;
 						ProvisioningStyle = Automatic;
 					};
 					E2402CD60023869D9548CA1A = {
-						DevelopmentTeam = FMQ6R58UAV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -296,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B81884307BC57300C936F0 /* App.icon in Resources */,
 				0E59EFD9D4C02220B8D89EA6 /* chime.wav in Resources */,
 				2BB98E4ED03CD5EEF488E88B /* latch.wav in Resources */,
 				40C1614CBAD93F447D2974B5 /* shell.wav in Resources */,
@@ -386,6 +398,7 @@
 		};
 		47559B1E782E3907A9BC9641 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F1A5E7B2D94A6183E7F001 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -422,7 +435,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = FMQ6R58UAV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -451,7 +463,7 @@
 		5D5652314073E210339296C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = App;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = App/Support/Info.plist;
@@ -470,7 +482,7 @@
 		A7954ADB7FCB0326B3605833 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = App;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = App/Support/Info.plist;
@@ -504,6 +516,7 @@
 		};
 		ED3330F70D5D27C48630740F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F1A5E7B2D94A6183E7F001 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -540,7 +553,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = FMQ6R58UAV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;

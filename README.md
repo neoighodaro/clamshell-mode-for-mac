@@ -22,7 +22,9 @@ Run the tests for the core package:
 swift test --package-path ClamCore
 ```
 
-`scripts/build-release.sh` builds a Developer ID signed release build and prints the path to `Clam.app`. It needs the team's signing certificate.
+To sign builds, copy `Config/Local.example.xcconfig` to `Config/Local.xcconfig` and set your team ID. That file is not checked in.
+
+`scripts/build-release.sh <team-id>` builds a Developer ID signed release build and prints the path to `Clam.app`. It needs that team's Developer ID certificate. Without the argument it uses `Config/Local.xcconfig`, or asks.
 
 ## Layout
 
